@@ -1,0 +1,160 @@
+openapi: 3.0.3
+info:
+  title: Smart Life Companion API
+  description: API documentation for the Smart Life Companion device, providing access to health tracking, navigation, voice assistance, secure communication, and environmental sensing.
+  version: 1.0.0
+servers:
+  - url: https://api.smartlifecompanion.com/v1
+    description: Production server
+paths:
+  /healthsync/biometrics:
+    get:
+      summary: Retrieve biometric data
+      description: Fetches real-time biometric data such as heart rate or stress levels.
+      parameters:
+        - name: type
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [heart_rate, stress_level, blood_oxygen]
+        - name: duration
+          in: query
+          required: true
+          schema:
+            type: string
+            example: last_24h
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        timestamp:
+                          type: string
+                          format: date-time
+                        value:
+                          type: number
+  /arnav/overlay:
+    post:
+      summary: Generate AR navigation overlay
+      description: Provides AR directions and contextual overlays based on location.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                lat:
+                  type: number
+                  example: 37.7749
+                lon:
+                  type: number
+                  example: -122.4194
+                mode:
+                  type: string
+                  enum: [walking, driving]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  overlay:
+                    type: string
+                    description: AR overlay data
+  /voicemate/command:
+    post:
+      summary: Process voice command
+      description: Interprets and processes voice commands for the personal assistant.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                input:
+                  type: string
+                  example: "What's the weather like today?"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: string
+                    example: "It's sunny with a high of 75°F."
+  /securecomm/message:
+    post:
+      summary: Send an encrypted message
+      description: Sends an encrypted message to a recipient.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                recipient_id:
+                  type: string
+                  example: "xyz123"
+                content:
+                  type: string
+                  example: "Meet me at 5"
+      responses:
+        '200':
+          description: Message sent successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: "sent"
+  /envirosense/current:
+    get:
+      summary: Get current environmental data
+      description: Retrieves current environmental data like air quality or temperature.
+      parameters:
+        - name: location
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [indoor, outdoor]
+        - name: sensor
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [air_quality, temperature, humidity]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  reading:
+                    type: object
+                    properties:
+                      value:
+                        type: number
+                      unit:
+                        type: string

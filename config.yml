@@ -1,0 +1,9 @@
+title: Smart Life Companion
+description: A futuristic handheld device for daily life enhancement.
+theme: jekyll-theme-minimal
+
+header_pages:
+  - index.md
+  - features.md
+  - build-specs.md
+  - api-portal.md  # We'll create this page in the next step
