@@ -1,4 +1,4 @@
-xxxopenapi: 3.0.3
+openapi: 3.0.3
 info:
   title: Smart Life Companion API
   description: API documentation for the Smart Life Companion device, providing access to health tracking, navigation, voice assistance, secure communication, and environmental sensing.

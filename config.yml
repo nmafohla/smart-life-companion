@@ -6,4 +6,4 @@ header_pages:
   - index.md
   - features.md
   - build-specs.md
-  - api-portal.md  # We'll create this page in the next step
+  - api-portal.md  

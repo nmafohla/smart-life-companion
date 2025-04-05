@@ -4,11 +4,20 @@ title: Build Specs
 ---
 # Build Specifications
 
-The Smart Life Companion is built with the following specifications:
+The Smart Life Companion (SLC), powered by FTG Tracker 1.0, is a marvel of modern engineering, combining advanced hardware, intelligent software, and a modular design to deliver a premium user experience. Below, explore the detailed specifications that make the SLC a leader in personal technology.
 
-- **Form Factor**: Palm-sized, sleek design with a touchscreen.
-- **Processor**: Low-power, high-efficiency chip for optimal performance.
-- **Connectivity**: 5G and Wi-Fi for real-time API interactions.
-- **Sensors**: Biometric (heart rate, temperature), environmental (air quality, humidity).
-- **Security**: End-to-end encryption, biometric authentication.
-- **Battery**: Long-lasting with USB-C charging support.
+<ul class="specs-list">
+    <li><strong>Form Factor:</strong> The SLC measures 120mm x 70mm x 8mm, making it a compact, palm-sized device that fits comfortably in your hand or pocket. Its sleek, unibody design is crafted from aerospace-grade aluminum with a matte finish, ensuring durability and a premium aesthetic. The 5-inch high-resolution touchscreen (2560x1440, 120Hz refresh rate) provides vibrant visuals for AR navigation and user interaction.</li>
+    <li><strong>Processor:</strong> Powered by a custom 8-core, 3.2 GHz low-power processor built on a 5nm architecture, the SLC delivers exceptional performance while optimizing energy efficiency. Paired with a dedicated neural processing unit (NPU), the device supports on-device machine learning for tasks like voice recognition and health data analysis, reducing latency and enhancing privacy.</li>
+    <li><strong>Memory and Storage:</strong> The SLC comes with 8GB of LPDDR5 RAM for seamless multitasking and 128GB of UFS 3.1 storage, providing ample space for apps, AR overlays, and biometric data. A microSD slot supports expandable storage up to 1TB, ensuring flexibility for future needs.</li>
+    <li><strong>Connectivity:</strong> Equipped with 5G (sub-6 GHz and mmWave) and Wi-Fi 6E, the SLC ensures ultra-fast, low-latency connectivity for real-time API interactions. Bluetooth 5.2 enables seamless pairing with peripherals like wireless earbuds or smartwatches, while an NFC chip supports contactless payments and device pairing.</li>
+    <li><strong>Sensors:</strong> The SLC features a comprehensive suite of sensors, including biometric sensors (heart rate monitor, blood oxygen sensor, skin temperature sensor), environmental sensors (air quality, temperature, humidity, UV), and motion sensors (9-axis accelerometer, gyroscope, magnetometer). A high-resolution 12MP camera with AR capabilities supports the ARNav API, while a depth sensor enhances AR accuracy.</li>
+    <li><strong>Security:</strong> Security is a top priority for the SLC. It uses AES-256 encryption for all communications and data storage, with a dedicated secure enclave for biometric data (fingerprint and voiceprint). The device supports multi-factor authentication, including biometric and PIN-based options, and integrates with enterprise-grade security protocols for professional use cases.</li>
+    <li><strong>Battery and Charging:</strong> The SLC is powered by a 3,500mAh lithium-polymer battery, providing up to 18 hours of mixed usage (health tracking, navigation, and communication). It supports 30W fast charging via USB-C, achieving a 50% charge in just 25 minutes, and includes wireless charging (Qi standard) for added convenience.</li>
+    <li><strong>Operating System:</strong> The SLC runs on a custom Linux-based OS optimized for low power consumption and real-time performance. The OS supports over-the-air (OTA) updates, ensuring the device stays up-to-date with the latest features and security patches. A developer-friendly SDK allows for custom app development and API integration.</li>
+    <li><strong>Durability:</strong> Designed for real-world use, the SLC is IP68-rated for water and dust resistance, capable of withstanding submersion in up to 1.5 meters of water for 30 minutes. Its display is protected by Corning Gorilla Glass Victus, offering superior scratch and drop resistance.</li>
+    <li><strong>Environmental Impact:</strong> The SLC is built with sustainability in mind. Its aluminum body is made from 100% recycled materials, and the device is packaged in fully recyclable, plastic-free materials. The SLC’s energy-efficient design reduces its carbon footprint, aligning with global sustainability goals.</li>
+</ul>
+
+### Engineering Excellence
+Every aspect of the SLC has been meticulously designed to balance performance, portability, and sustainability. From its advanced processor to its eco-friendly materials, the SLC represents the pinnacle of personal technology, ready to meet the demands of today’s users while paving the way for tomorrow’s innovations.
